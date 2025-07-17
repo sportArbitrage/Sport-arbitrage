@@ -1,0 +1,76 @@
+name: sports_arbitrage_app
+description: A sports arbitrage app for Nigerian bookmakers.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.5
+  google_fonts: ^4.0.4
+  flutter_svg: ^2.0.7
+  flutter_spinkit: ^5.2.0
+  shimmer: ^3.0.0
+  flutter_slidable: ^3.0.0
+  percent_indicator: ^4.2.3
+  
+  # State management
+  provider: ^6.0.5
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+
+  # Firebase
+  firebase_core: ^2.14.0
+  firebase_auth: ^4.6.3
+  firebase_messaging: ^14.6.3
+  cloud_firestore: ^4.8.1
+  google_sign_in: ^6.1.4
+  
+  # Local Storage
+  shared_preferences: ^2.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # HTTP and API
+  http: ^1.1.0
+  dio: ^5.2.1
+  json_annotation: ^4.8.1
+  
+  # Utils
+  intl: ^0.18.1
+  url_launcher: ^6.1.12
+  package_info_plus: ^4.1.0
+  flutter_local_notifications: ^15.1.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.2
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+
+flutter_native_splash:
+  color: "#0055FF"
+  image: assets/images/splash_logo.png
+  android: true
+  ios: true 
